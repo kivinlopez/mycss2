@@ -1,0 +1,473 @@
+/* GENERALES */
+
+{font-size: 62.5%; /*Reset para REMS - 62.5% = 10PX DE 16PX*/;}
+
+body,html,h1,h2{
+ margin: 0;
+ padding: 0;
+}
+
+img{
+    width: 5rem;
+}
+
+/* .center{
+    width: 90%;
+    margin: auto;
+} */
+
+/* comienzo del header */
+
+.container-header{
+    background-color: blue;
+    height: auto;
+    width: 100%;
+    color: white;
+    border-radius:1rem 1rem 0 0 ;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 .7rem 0 1rem ;
+    align-items: center;
+}
+
+.content-header ul{
+    display: flex;
+    margin: 2rem;
+    list-style: none;
+}
+
+.content-header ul a{
+    margin: .2rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
+    border: .1rem solid;
+}
+
+.content-header ul a:hover{
+    background-color: #14f8eda6;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.content-header ul a:active{
+    background-color: red;
+}
+
+/* inicio del main */
+.container-flow{
+    /* flex-wrap: wrap;  */
+    display: flex;
+    
+    /* height: 65rem; */
+}
+
+.box-cont-main{
+    padding: 2rem 2em;
+    /* width: 90%;
+    height: 2rem; */
+    background-color:#22da5a1f;
+    font-size: 1.5rem;
+    /* height: 60rem; */
+    width: 169%;
+    display: block;
+}
+
+.box-cont-main h2{
+    text-align: center;
+}
+
+
+
+.nn h3{
+    text-align: center;
+}
+
+.content-municipalities{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    /* background-color: brown; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.item{
+    width: 33.3%;
+    background-color: cadetblue;
+    margin: .2rem;
+    border: .5px solid gray;
+    justify-content: space-between;
+    border-radius:.5rem ;
+}
+
+.item  img{
+    width: 100%;
+    height: 80%;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.item p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.item a{
+    text-decoration: none;
+    color: white;
+}
+
+.item h2:hover{
+    transform: translate(20px );
+}
+
+
+/* NOTICE */
+
+.notice-box {
+    text-align: center;
+    width: 50%;
+    background-color: rgb(228, 218, 218);
+    border: 1px solid rgb(177, 169, 169);;
+    /* border-radius: 1rem ; */
+    padding: .9rem;
+}
+
+.notice-box img{
+    width: 90%;
+}
+
+.notice-box p{
+    font-size: 300;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.notice-2{
+    margin-top: 3rem;
+}
+
+
+/* footer */
+
+.footer-box{
+    background-color: blue;
+    height: 5rem;
+    
+    border-radius: 0 0 1rem 1rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.enlace{
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.enlace a{
+    color: rgb(207, 197, 197);
+    text-decoration: none;
+}
+
+.small{
+    margin: 0;
+    height: 4rem;
+    width: 12rem;
+}
+
+.social{
+    display: flex;
+}
+
+.fb-share-button{
+    margin: 0 2rem 0 0 ;
+}
+
+/* inicio de los tweets */
+
+.container-tweests{
+    width: 100%;
+    
+}
+
+.content-tweets{
+    width: 100%;
+    margin: 1rem;
+}
+
+.content-tweets strong{
+    text-align: center;
+    margin: 0 2rem 2rem 5rem;
+}
+
+.text-tweets{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.twees-box{
+    width: 50%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin:  0 auto;
+}
+
+.twitter-tweet{
+    margin: 1rem;
+}
+
+/* inicio of galery */
+.container-galery{
+    background-color:#22da5a1f ;
+}
+.content-galery{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-2{
+    width: 32.3%;
+    height: 16rem;
+    margin: .5rem auto ;
+    background-color: gray;
+}
+
+.item-2 img{
+    height: 100%;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.item-2:hover{
+    box-shadow: .2rem .2rem rgb(151, 137, 137);
+}
+
+/* contactenos */
+.content-contactme h1{
+    text-align: center;
+    margin: 2rem;
+    font-size: 4rem;
+    font-size: 900;
+}
+
+.contactme{
+    margin: 2rem auto 2rem auto ;
+    width: 70%;
+}
+/* media */
+@media only screen and (max-width: 1024px) {
+    .content-header{
+        width: 100%;
+    }
+
+    .content-header h1{
+        font-size: 2rem;
+        font-size: 700;
+    }
+}
+
+@media only screen and (max-width: 768px ){
+    body{
+        width: 100%;
+    }
+    .content-header{
+        justify-content: end;
+        height: 4rem;
+    }
+    
+    .content-header .title{
+        width:30% ;
+        margin: 0;
+    }
+
+    .content-header ul{
+        width: 30%;
+        margin: 0;
+    }
+
+    .content-header ul a{
+        padding: 1.2rem;
+        height: 3rem;
+    }
+
+      /* tweets */
+    .twees-box{
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .twitter-tweet{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* galery  */
+
+    .item-2 {
+        width: 30.3%;
+        height: 10rem;
+        margin: .5rem auto;
+        background-color: gray;
+    }
+
+    .item-2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* contact us */
+    .contactme iframe{
+        width: 100%;
+    }
+}
+  
+
+@media only screen and (max-width:480px){
+    /* generales */
+    body{
+        width: 100%;
+    }
+    
+    .container-header {
+        width: 100%;
+        height: 5rem;
+    }
+
+    .content-header{
+        display: block;
+    }
+
+    .content-header .title{
+        font-size: 1rem;
+        width: 100%;
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .content-header ul{
+        margin: 1rem 2rem 0 0;
+        width: 80%;
+        justify-content: center;
+    }
+    .content-header ul a{
+        width: 1rem;
+        padding: 0.2rem;
+        margin: .5rem;
+    }
+    /* main index */
+    .container-flow h2,h3,h1{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .container-flow p{
+        font-size: .5rem;
+    }
+     
+    /* footer */
+
+    .footer-box{
+        height: 12rem;
+    }
+
+    .enlace{
+        display: inline;
+        text-align: center;
+    }
+
+    .enlace h2,h3,h1,p{
+        width: 100%;
+        font-size: 1rem;
+        display: block;
+    }
+    .social{
+        justify-content: center;
+    }
+
+    /* tweets */
+
+    .text-tweets{
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content-tweets strong {
+        text-align: justify;
+        margin: 0 0rem 0rem -1rem;
+    }
+
+    .twees-box{
+        display: inline;
+
+    }
+
+    .twitter-tweet{
+        width: 80%;
+    }
+
+    /* galery */
+
+    .content-galery{
+        width: 100%;
+    }
+
+    .item-2 {
+        width: 31.8%;
+        height: 10rem;
+        margin: 0.2rem 0.2rem;
+        background-color: gray;
+    }
+
+
+    /* contact us */
+
+    .content-contactme h1{
+        font-size: 2rem;
+    }
+}
+
+    
+
+@media only screen and (max-width:375px){
+    /* generales */
+    body{
+        width: 100%;
+    }
+
+    .container-header{
+        width: 100%;
+        height: 6rem;
+    }
+     
+    /*index  */
+    .nn .box.1.0{
+        margin: 0;
+        display: inline-block;
+    }
+    .item{
+        width: auto;
+    }
+
+    /* galery */
+
+    .item-2{
+        width: auto
+    }
+    
+    .footer-box{
+        height: 13rem;
+    }
+}
